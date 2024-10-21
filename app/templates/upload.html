@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload 5 Images for Processing</title>
+    <style>
+        /* Basic styles for the container */
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for each upload section */
+        .upload-section {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        /* Button styles */
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload 5 Images for Processing</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <label for="photo1">Upload Image 1:</label>
+                <input type="file" id="photo1" name="photo1" required>
+            </div>
+            <div class="upload-section">
+                <label for="photo2">Upload Image 2:</label>
+                <input type="file" id="photo2" name="photo2" required>
+            </div>
+            <div class="upload-section">
+                <label for="photo3">Upload Image 3:</label>
+                <input type="file" id="photo3" name="photo3" required>
+            </div>
+            <div class="upload-section">
+                <label for="photo4">Upload Image 4:</label>
+                <input type="file" id="photo4" name="photo4" required>
+            </div>
+            <div class="upload-section">
+                <label for="photo5">Upload Image 5:</label>
+                <input type="file" id="photo5" name="photo5" required>
+            </div>
+            <br>
+            <button type="submit" class="submit-btn">Upload and Process</button>
+        </form>
+    </div>
+</body>
+</html>
